@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Your Order | EcoPick</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+ 
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌿 EcoPick</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="skincare.html">Skin Care</a></li>
+        <li><a href="bestsellers.html">Best Sellers</a></li>
+        <li><a href="gifting.html">Gifting</a></li>
+        <li><a href="plants.html">Plants</a></li>
+        <li><a href="medico-plants.html">Medico Plants</a></li>
+        <li><a href="decoration.html">Decoration Items</a></li>
+        <a href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+         <a href="liked.html">❤️ Liked (<span id="like-count">0</span>)</a>
+
+       
+        <div class="profile-dropdown">
+  <button class="profile-btn">👤 Account ▾</button>
+  <div class="dropdown-content">
+    <p id="userPhone">📱 Phone: Not Logged In</p>
+    <a href="login.html">🔐 Login</a>
+    <a href="profile.html">👤 My Profile</a>
+    <a href="order.html">🛍 Orders</a>
+    <a href="wishlist.html">❤️ Wishlist</a>
+    <a href="#" id="logoutBtn">🚪 Logout</a>
+  </div>
+</div>
+
+      </ul>
+     
+    </nav>
+    
+  </header>
+
+  <main class="track-order-container">
+    <h1>Track Your Order</h1>
+    <p>Enter your Order ID or Registered Email to check the status of your order.</p>
+
+    <form id="trackForm" class="track-form">
+      <input type="text" id="orderId" placeholder="Enter Order ID or Email" required>
+      <button type="submit">Track Order</button>
+    </form>
+
+    <div id="orderStatus" class="order-status-box" style="display: none;">
+      <h2>Order Status</h2>
+      <p><strong>Order ID:</strong> #ECPK12345</p>
+      <p><strong>Status:</strong> Shipped</p>
+      <p><strong>Expected Delivery:</strong> 30 July 2025</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h3>Information</h3>
+        <ul>
+          <li><a href="track.html">Track your order</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="affiliate.html">Affiliate Program</a></li>
+          <li><a href="corporate-gifting.html">Corporate Gifting</a></li>
+          <li><a href="StoreLocator.html">Store Locator</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Important Links</h3>
+        <ul>
+          
+          <li><a href="shipping-returns.html">Shipping & Returns</a></li>
+          <li><a href="termand condition copy.html">Terms & Conditions</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="refund-policy.html">Refund Policy</a></li>
+          
+        </ul>
+        
+  <h3>Connect with us</h3>
+  <div class="social-icons">
+    <a href="https://instagram.com/yourprofile" target="_blank" class="social-icon instagram" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://twitter.com/yourprofile" target="_blank" class="social-icon twitter" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="social-icon whatsapp" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://facebook.com/yourprofile" target="_blank" class="social-icon facebook" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon linkedin" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+
+  <div class="newsletter">
+    <h4>Subscribe to our newsletter</h4>
+    <form id="newsletter-form">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</div>
+
+
+      </div>
+
+      
+    
+    <p>© 2025 EcoPick. All rights reserved by ShantiPriya.</p>
+  </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>

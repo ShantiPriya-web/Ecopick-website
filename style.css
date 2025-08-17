@@ -1,0 +1,1232 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2e7d32;
+  padding: 10px 20px;
+  align-items: center;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar input[type="text"] {
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+  margin-left: 10px;
+}
+
+.home-content {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.explore-btn {
+  padding: 10px 20px;
+  background-color: #2e7d32;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #2e7d32;
+  color: white;
+  padding: 30px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer h3 {
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+  justify-content: center;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 220px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #333;
+}
+
+.product-card button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.like-btn {
+  background-color: #f2f2f2;
+  font-size: 18px;
+}
+
+
+/* ===== Profile Page Styles ===== */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  color: #2d2d2d;
+}
+h1{
+  text-align: center;
+  margin-top: 30px;
+  color: #2d2d2d;
+}
+
+.profile-form {
+  width: 90%;
+  max-width: 500px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-form label {
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.profile-form input[type="text"],
+.profile-form input[type="email"],
+.profile-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.profile-form textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.profile-form button {
+  margin-top: 25px;
+  width: 100%;
+  background-color: #00b894;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profile-form button:hover {
+  background-color: #019875;
+}
+/* ==== Profile Dropdown Styles ==== */
+.profile-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  right: 0;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.dropdown-content a,
+.dropdown-content p {
+  display: block;
+  color: #333;
+  padding: 8px;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-content a:hover {
+  background-color: #f2f2f2;
+}
+
+.profile-dropdown:hover .dropdown-content {
+  display: block;
+}
+  /* ========== LOGIN PAGE STYLES ========== */
+.login-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2b6e2f;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2b6e2f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #235924;
+}
+
+.login-container .register-link {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-container .register-link a {
+  color: #2b6e2f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-container .register-link a:hover {
+  text-decoration: underline;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.search-form input {
+  width: 80%;
+  height:50px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-right: 6px;
+}
+
+.search-form button {
+  width:20% ;
+  height: 50px;
+  padding: 8px 12px;
+  background-color: #2b6e2f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Offer Banner Styling */
+.offer-banner img {
+  width: 100%;
+  height: 500px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Suggestions Section */
+.suggestions {
+  margin: 40px 20px;
+  text-align: center;
+}
+
+.suggestions h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #444;
+}
+
+.suggestion-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.suggestion-card {
+  width: 180px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 10px;
+  background: #f9f9f9;
+  transition: 0.3s;
+}
+
+.suggestion-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.suggestion-card p {
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.suggestion-card:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  width: 220px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card button {
+  margin: 8px 5px 0;
+  padding: 8px 12px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.like-btn {
+  background-color: #ff4081;
+}
+
+
+/*order*/
+/* Base setup */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f3f6;
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  margin-bottom: 25px;
+  color: #2e2e2e;
+  font-size: 26px;
+  text-align: center;
+}
+
+/* Product card style */
+.order-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  background-color: #fafafa;
+  border-radius: 6px;
+  margin-bottom: 25px;
+}
+
+.order-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.order-card h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #212121;
+}
+
+.order-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Form style */
+.order-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.order-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2e7d32;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 15px;
+}
+
+.order-form button:hover {
+  background-color:#2e7d32;
+}
+
+/* Success message */
+.success-message {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 15px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  border-left: 6px solid #43a047;
+  border-radius: 5px;
+  text-align: center;
+}
+/* track order*/
+.track-order-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.track-order-container h1 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.track-form input {
+  width: 80%;
+  padding: 12px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.track-form button {
+  padding: 12px 25px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.track-form button:hover {
+  background-color: #1b5e20;
+}
+
+.order-status-box {
+  background-color: #f4f4f4;
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+/*contact us*/
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.contact-banner {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-banner h1 {
+  font-size: 36px;
+  color: #2e7d32;
+}
+
+.contact-banner p {
+  font-size: 18px;
+  color: #666;
+}
+
+.contact-form-section {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  background-color: #f5f5f5;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #1b5e20;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #388e3c;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #2e7d32;
+}
+
+/*faq*/
+.faq-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.faq-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-header h1 {
+  font-size: 36px;
+  color: #2e7d32;
+}
+
+.faq-header p {
+  font-size: 18px;
+  color: #555;
+}
+
+.faq-list {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  font-size: 20px;
+  color: #1b5e20;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.faq-item a {
+  color: #2e7d32;
+  text-decoration: underline;
+}
+/*careers*/
+.careers-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.careers-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.careers-header h1 {
+  font-size: 36px;
+  color: #2e7d32;
+}
+
+.careers-header p {
+  font-size: 18px;
+  color: #555;
+}
+
+.career-opportunities h2 {
+  font-size: 28px;
+  color: #1b5e20;
+  margin-bottom: 25px;
+}
+
+.career-item {
+  background: #f9f9f9;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-left: 5px solid #2e7d32;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.career-item h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #1b5e20;
+}
+
+.career-item p {
+  margin: 6px 0;
+  font-size: 16px;
+  color: #444;
+}
+
+.apply-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background-color: #2e7d32;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #1b5e20;
+}
+
+/*affiliate*/
+.affiliate-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.affiliate-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.affiliate-header h1 {
+  font-size: 36px;
+  color: #2e7d32;
+}
+
+.affiliate-header p {
+  font-size: 18px;
+  color: #555;
+}
+
+.affiliate-details, .how-it-works, .signup-now {
+  margin-bottom: 40px;
+}
+
+.affiliate-details h2,
+.how-it-works h2,
+.signup-now h2 {
+  font-size: 26px;
+  color: #1b5e20;
+  margin-bottom: 20px;
+}
+
+.affiliate-details ul,
+.how-it-works ol {
+  font-size: 16px;
+  color: #444;
+  padding-left: 20px;
+}
+
+.affiliate-details ul li,
+.how-it-works ol li {
+  margin-bottom: 10px;
+}
+
+.signup-now p {
+  font-size: 16px;
+  color: #444;
+}
+
+.apply-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #2e7d32;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #1b5e20;
+}
+/*corporate-gifting.html*/
+.gifting-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.gifting-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.gifting-hero h1 {
+  font-size: 36px;
+  color: #2e7d32;
+}
+
+.gifting-hero p {
+  font-size: 18px;
+  color: #555;
+}
+
+.gifting-info h2,
+.gifting-gallery h2,
+.gifting-contact h2 {
+  font-size: 26px;
+  color: #1b5e20;
+  margin-bottom: 20px;
+}
+
+.gifting-info ul {
+  font-size: 16px;
+  color: #444;
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.gifting-info ul li {
+  margin-bottom: 10px;
+}
+
+.gift-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gift-box {
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+.gift-box img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.gifting-contact {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.apply-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #2e7d32;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #1b5e20;
+}
+/*store locator*/
+
+/* store-locator.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f6f4;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #1b5e20;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.search-section {
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.search-section input[type="text"] {
+  width: 60%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-section button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #43a047;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.search-section button:hover {
+  background-color: #388e3c;
+}
+
+.store-results {
+  padding: 20px;
+}
+
+.store {
+  background-color: #ffffff;
+  padding: 20px;
+  border-left: 4px solid #4caf50;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.store h3 {
+  margin-top: 0;
+  color: #1b5e20;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #e0f2f1;
+  font-size: 14px;
+  color: #555;
+}
+
+/*shipping-returns*/
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+}
+
+.shipping-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shipping-container h1 {
+  font-size: 28px;
+  color: #2e7d32;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.shipping-container h2 {
+  color: #388e3c;
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+.shipping-container p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.shipping-container ul {
+  margin-left: 20px;
+  padding-left: 10px;
+  list-style: disc;
+  color: #444;
+}
+
+.shipping-container ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+/*term and condition*/
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.terms-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.terms-container h1 {
+  color: #2e7d32;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.terms-container h2 {
+  font-size: 22px;
+  color: #388e3c;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.terms-container p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+}
+/*privacy-policy.html*/
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.privacy-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.privacy-container h1 {
+  font-size: 30px;
+  color: #2e7d32;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.privacy-container h2 {
+  font-size: 22px;
+  color: #388e3c;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.privacy-container p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.8;
+}
+
+/* Refunds - policy*/
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.refund-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.refund-container h1 {
+  font-size: 30px;
+  color: #2e7d32;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.refund-container h2 {
+  font-size: 22px;
+  color: #388e3c;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.refund-container p,
+.refund-container ul {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.8;
+}
+
+.refund-container ul {
+  padding-left: 20px;
+}
+
+/* contact link*/
+.footer-socials {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+}
+
+.footer-socials h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.footer-socials .social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 8px;
+  font-size: 20px;
+  color: white;
+  background-color: #333;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.instagram { background-color: #e1306c; }
+.twitter { background-color: #1da1f2; }
+.whatsapp { background-color: #25d366; }
+.facebook { background-color: #3b5998; }
+.linkedin { background-color: #0077b5; }
+
+.newsletter {
+  margin-top: 20px;
+}
+
+.newsletter h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 240px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  margin-right: 5px;
+}
+
+.newsletter button {
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #555;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Profile - EcoPick</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <h2>User Profile 👤</h2>
+
+  <div class="profile-form">
+    <label>Full Name:</label>
+    <input type="text" id="fullName" placeholder="Enter your name" />
+
+    <label>Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" />
+
+    <label>Address:</label>
+    <textarea id="address" placeholder="Your address"></textarea>
+
+    <button onclick="saveProfile()">Save Profile</button>
+  </div>
+
+  <script>
+    // Load saved profile data
+    window.onload = function () {
+      const profile = JSON.parse(localStorage.getItem("userProfile")) || {};
+      document.getElementById("fullName").value = profile.fullName || "";
+      document.getElementById("email").value = profile.email || "";
+      document.getElementById("address").value = profile.address || "";
+    }
+
+    // Save profile data
+    function saveProfile() {
+      const profile = {
+        fullName: document.getElementById("fullName").value,
+        email: document.getElementById("email").value,
+        address: document.getElementById("address").value,
+      };
+      localStorage.setItem("userProfile", JSON.stringify(profile));
+      alert("Profile saved successfully!");
+    }
+  </script>
+</body>
+</html>

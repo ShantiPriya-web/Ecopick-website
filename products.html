@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoPick - Products</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌿 EcoPick</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="skincare.html">Skin Care</a></li>
+        <li><a href="bestsellers.html">Best Sellers</a></li>
+        <li><a href="gifting.html">Gifting</a></li>
+        <li><a href="plants.html">Plants</a></li>
+        <li><a href="medico-plants.html">Medico Plants</a></li>
+        <li><a href="decoration.html">Decoration Items</a></li>
+        <a href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+         <a href="liked.html">❤️ Liked (<span id="like-count">0</span>)</a>
+
+       
+        <div class="profile-dropdown">
+  <button class="profile-btn">👤 Account ▾</button>
+  <div class="dropdown-content">
+    <p id="userPhone">📱 Phone: Not Logged In</p>
+    <a href="login.html">🔐 Login</a>
+    <a href="profile.html">👤 My Profile</a>
+    <a href="order.html">🛍 Orders</a>
+    <a href="wishlist.html">❤️ Wishlist</a>
+    <a href="#" id="logoutBtn">🚪 Logout</a>
+  </div>
+</div>
+
+      </ul>
+     
+    </nav>
+    
+  </header>
+   
+  <main class="home-content">
+    <h2>All Products</h2>
+    <p>Product cards can go here</p>
+    
+<!-- Search Section -->
+  <section class="search-section">
+    <div class="container">
+      <input type="text" id="locationInput" placeholder="Search Products Here......!">
+      <button onclick="searchStore()">Search</button>
+    </div>
+  </section>
+    <div class="product-container">
+  <div class="product-card">
+    <img src="images/clay water bottel.jpg" alt="Eco Bottle">
+    <h3>Reusable Eco Bottle</h3>
+    <p>₹299</p>
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="like-btn">❤️</button>
+  </div>
+
+  <div class="product-card">
+    <img src="images/Jute-bag-No-Plastic.jpg" alt="Jute bag">
+    <h3>Jute Bag</h3>
+    <p>₹99</p>
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="like-btn">❤️</button>
+  </div>
+  <div class="product-card">
+    <img src="images/straws.png" alt="Jute bag">
+    <h3>Straws</h3>
+    <p>₹99</p>
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="like-btn">❤️</button>
+  </div>
+  <div class="product-card">
+    <img src="images/Money Plants.jpg" alt="Money Plants">
+    <h3>Money Plant</h3>
+    <p>₹199</p>
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="like-btn">❤️</button>
+    <button class="add-to-Buy-Now">Buy Now</button>
+  </div>
+  <div class="product-card">
+        <img src="images/herbal perfume.jpeg" alt="Herbal Perfume">
+        <h3>Herbal Perfume</h3>
+        <p>₹329</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="like-btn">❤️</button>
+      </div>
+  <div class="product-card">
+    <img src="images/Jute-bag-No-Plastic.jpg" alt="Jute bag">
+    <h3>Jute Bag</h3>
+    <p>₹99</p>
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="like-btn">❤️</button>
+  </div>
+  
+   <div class="product-card">
+        <img src="images/tonner.jpeg" alt="Tonner">
+        <h3>Moisturizer</h3>
+        <p>₹329</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="like-btn">❤️</button>
+      </div>
+   <div class="product-card">
+    <img src="images/gift hamper.jpeg" alt="Gift box hamper">
+    <h3>Gift Hamper</h3>
+    <p>₹1300 30% off</p>
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="like-btn">❤️</button>
+    <button class="like-to-cart">Buy Now</button>
+  </div>
+ <div class="product-card">
+        <img src="images/face pack powder.jpg" alt="Herbal Face pack powder">
+        <h3>Herbal Face Pack powder</h3>
+        <p>₹350</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="like-btn">❤️</button>
+      </div>
+   <div class="product-card">
+    <img src="images/Hydrangea Plant.jpeg" alt="Hydrangea plant">
+    <h3>Hydrangea Plant</h3>
+    <p>₹499 10% off</p>
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="like-btn">❤️</button>
+     <button class="add-to-cart">Buy Now</button>
+  </div>
+  
+   <div class="product-card">
+    <img src="images/ganesha idols.webp" alt="Ganesha Idol">
+    <h3>Ganesha Idols</h3>
+    <p>₹399</p>
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="like-btn">❤️</button>
+     <button class="add-to-Buy">Buy Now</button>
+  </div>
+  
+  <div class="product-card">
+    <img src="images/doorway flower Toran.webp" alt="flower">
+    <h3>Doorway Flower Toran</h3>
+    <p>₹899</p>
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="like-btn">❤️</button>
+     <button class="add-to-Buy">Buy Now</button>
+   </div>
+  
+
+ <p id="noResults" style="display: none; color: red; text-align: center;">No products found.</p>
+
+  <!-- Add more product cards here -->
+</div>
+
+  </main>
+ <footer>
+    <div class="footer-container">
+      <div>
+        <h3>Information</h3>
+        <ul>
+          <li><a href="track.html">Track your order</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="affiliate.html">Affiliate Program</a></li>
+          <li><a href="corporate-gifting.html">Corporate Gifting</a></li>
+          <li><a href="StoreLocator.html">Store Locator</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Important Links</h3>
+        <ul>
+          
+          <li><a href="shipping-returns.html">Shipping & Returns</a></li>
+          <li><a href="termand condition copy.html">Terms & Conditions</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="refund-policy.html">Refund Policy</a></li>
+          
+        </ul>
+        
+  <h3>Connect with us</h3>
+  <div class="social-icons">
+    <a href="https://instagram.com/yourprofile" target="_blank" class="social-icon instagram" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://twitter.com/yourprofile" target="_blank" class="social-icon twitter" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="social-icon whatsapp" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://facebook.com/yourprofile" target="_blank" class="social-icon facebook" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon linkedin" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+
+  <div class="newsletter">
+    <h4>Subscribe to our newsletter</h4>
+    <form id="newsletter-form">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</div>
+
+
+      </div>
+
+      
+    
+    <p>© 2025 EcoPick. All rights reserved by ShantiPriya.</p>
+  </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+
+
+</html>
